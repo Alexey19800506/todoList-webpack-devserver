@@ -3,13 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "copy:html": "cp ./src/index.html ./dist/index.html",
-    "build:scripts": "webpack --mode production",
-    "clean": "rd /s /q dist",
-    "build": "npm-run-all clean build:scripts copy:html",
-    "watch": "webpack -d eval-source-map -w"
+    "build": "webpack --mode production",
+    "start": "webpack serve --open"
   },
   "keywords": [],
   "author": "",
